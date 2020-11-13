@@ -20,7 +20,7 @@ html{
 }
 
 body{
-    font-family: 'roboto', 'sans-serif';
+    font-family: 'Roboto', sans-serif;
     font-size: 14px;
     color: var(--main-color-text-gray);
 }
@@ -154,6 +154,11 @@ h1, h2, h3, ul, p{
 
         /* link */
 
+.link-galery{
+    text-decoration: none;
+    color: inherit;
+}
+
 .link{
     text-decoration: none;
     color: inherit;
@@ -176,6 +181,7 @@ h1, h2, h3, ul, p{
     padding: 6px 22px; 
     border: none; 
     outline: none;  
+    
 } 
 
 .btn{
@@ -188,7 +194,8 @@ h1, h2, h3, ul, p{
     margin-right: 8px;
 }
 
-.services:hover{
+.services:hover,
+.services:focus{
     background-color: var(--accent-color-blue);
     color: var(--background-color-white);
 }
@@ -205,20 +212,28 @@ h1, h2, h3, ul, p{
     flex-wrap: wrap;
 }
 
+.photo-item:hover,
+.photo-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);  
+}
+
 .photo{
+    width: 100%;
+}
+
+.photo-item{
     border: 1px solid #EEEEEE;
     width: 370px;
     height: auto;
     margin-top: 50px;
-    flex-basis: calc(100% / 3 - 30px);
 
 }
 
-.photo:not(:nth-child(3n + 1)){
+.photo-item:not(:nth-child(3n + 1)){
     margin-left: 30px;
 }
 
-.photo:nth-child(n + 4){
+.photo-item:nth-child(n + 4){
     margin-top: 30px;
 }
 
@@ -270,7 +285,8 @@ h1, h2, h3, ul, p{
 
 
 
-.link-svg:hover .social-item-nav-svg{
+.link-svg:hover .social-item-nav-svg,
+.link-svg:focus .social-item-nav-svg{
     fill: var(--accent-color-blue);
 }
 

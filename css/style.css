@@ -433,21 +433,18 @@ h1, h2, h3, ul, p{
     display: flex;
 }
 
-.clients-svg{
-    width: 45px;
-    height: 50px;
-}
-
 .link-clients-svg{
-    margin-top: 50px;
     width: 170px;
     height: 90px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
+    margin-top: 50px;
+    max-width: 170px;
+    max-height: 90px;
     border: 1px solid #AFB1B8;
+    display: flex;
     border-radius: 4px;
     fill: #AFB1B8;
+    align-items: center;
+    justify-content: center;
 }
 
 .link-clients-svg:focus .clients-svg ,
@@ -463,7 +460,6 @@ h1, h2, h3, ul, p{
 .item-client{
     margin-right: 30px;
 }
-
 
 .social-list{
     margin-left: auto;
@@ -486,7 +482,8 @@ h1, h2, h3, ul, p{
     fill: var(--main-color-text-gray);
 }
 
-.link-svg:hover .social-item-nav-svg{
+.link-svg:hover .social-item-nav-svg ,
+.link-svg:focus .social-item-nav-svg{
     fill: var(--accent-color-blue);
 }
 
@@ -499,7 +496,6 @@ h1, h2, h3, ul, p{
 .social-list-footer{
     margin-left: auto;
     margin-right: auto;
-    width: calc(100% - 150px / 6);
 }
 
 
@@ -530,4 +526,5 @@ h1, h2, h3, ul, p{
     font-weight: bold;
     font-size: 1.166;
     letter-spacing: 0.03em;
+    line-height: 16px;
 }
